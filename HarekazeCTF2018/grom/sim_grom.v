@@ -2,7 +2,7 @@
 module sim_grom;
   parameter STEP = 100;
 
-  // create clock
+  // generate clock
   reg clk;
   always begin
     clk = 1;
@@ -16,7 +16,7 @@ module sim_grom;
 
   // start simulation
   initial begin
-    // dumo setting for vvp
+    // dump setting for vvp
     $dumpfile("sim_grom.vcd");
     $dumpvars(0,sim_grom);
 
